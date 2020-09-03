@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-57344315-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-57344315-2');
+		</script>
+
 		<meta charset="UTF-8">
 		<title>Derek Ng | Projects</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -25,6 +33,77 @@
 			<br><br><br><br>
 			<h1>Projects</h1>
 			<br><br><br><br><br>
+		</div>
+
+		<div class="pLeft">
+			<h2>The Wehe Project</h2>
+			<img src="images/wehe.png" alt="Wehe Android app">
+			<p>
+				<a href="https://dd.meddle.mobi/" target="_blank">The Wehe Project</a> is a tool that detects
+				whether Internet service providers (ISPs)	differentiate network traffic—that is, violate net
+				neutrality—in certain apps, like YouTube, Zoom, Disney+, Netflix, and Whatsapp, as well as
+				certain network ports. Users can use either the <a href="https://apps.apple.com/us/app/wehe/id1309242023" target="_blank">iOS app</a>
+				or the <a href="https://play.google.com/store/apps/details?id=mobi.meddle.wehe&hl=en_US" target="_blank">Android app</a>
+				to run tests on their ISPs.
+				<br><br>
+				I joined the project in May 2020 to maintain and implement new functionalities to the Android
+				app, which has over 130,000 installs. I added the ability to detect differentiation between
+				network ports, added features to improve the user experience, stabilized the app by reducing
+				the number of crashes. I also worked with <a href="https://www.arcep.fr/" target="_blank">Arcep</a>,
+				the French telecommunications agency, to test the app to prepare for its release in France. I
+				was supervised by <a href="https://david.choffnes.com/" target="_blank">Dr. David Choffnes</a>
+				of Northeastern University and <a href="https://www.ccs.neu.edu/home/fangfanli/" target="_blank">Fangfan Li</a>.
+			</p>
+		</div>
+
+		<div class="pRight">
+			<h2>Information Exposure From Consumer IoT Devices</h2>
+			<img src="images/iot.png" alt="IoT code demo">
+			<p>
+				In January 2020, I joined the <a href="https://moniotrlab.ccis.neu.edu/" target="_blank">Mon(IoT)r Lab</a>
+				at Northeastern University under the direction of <a href="https://david.choffnes.com/" target="_blank">Dr. David Choffnes</a>
+				and <a href="http://www.danieldubois.org/" target="_blank">Dr. Daniel Dubois</a>. In this lab,
+				I worked with the code accompanying the paper titled "Information Exposure From Consumer IoT
+				Devices: A Multidimensional, Network-Informed Measurement Approach". The software contains
+				three analyses: destination analysis, which analyzes the locations on the Internet that IoT
+				devices have sent or received network traffic to and from; encryption analysis,	which analyzes
+				the encryption state of IoT network traffic; and content analysis, which constructs	a
+				machine-learning model to predict the activity of an IoT device based on its network traffic.
+				<br><br>
+				My main project with this code was to improve the usability of the code, in addition to helping
+				other students integrate their code with this code. Initially, the code was difficult to use
+				due to frequent crashes and a lack of documentation. I added detailed usage statements,
+				error messages, documentation, and examples to the code with user-friendliness in mind. There
+				were also a few inaccuracies in the implementation, which I also corrected. The code to this
+				project can be found <a href="https://github.com/NEU-SNS/intl-iot" target="_blank">here</a>.
+			</p>
+		</div>
+
+		<div class="pLeft">
+			<h2>FUSE File System</h2>
+			<img src="images/fs.png" alt="File system example">
+			<p>
+				A project that I did for my Computer Systems class was to build a file system using FUSE. The
+				file system can perform several functions just like any standard file system in Linux, such as
+				reading and writing files of arbitrary size, creating and removing directories, copying and
+				moving files, linking and unlinking files, and editing file metadata. The file system is also
+				copy on write, with the ability to save a new version each time a write happens and the ability
+				to rollback to any one of the previous twenty versions. The code to this project can be found
+				<a href="https://github.com/dng24/FuseFileSystem" target="_blank">here</a>.
+			</p>
+		</div>
+
+		<div class="pRight">
+			<h2>Linux Shell</h2>
+			<img src="images/shell.png" alt="Linux shell">
+			<p>
+				This is another project that I did for my Computer Systems class, where the goal was to build
+				a shell program for Linux. While my shell is not as complex as the standardized shells, it does
+				have the basic functionalities, such as executing programs, redirection, pipes, variables,
+				background tasks, subshells, and more. Commands can either be inputted from a file or
+				interactively through	standard in. The code for this project can be found
+				<a href="https://github.com/dng24/nushell" target="_blank">here</a>.
+			</p>
 		</div>
 
 		<div class="pLeft">
@@ -57,7 +136,7 @@
 				or misformed expressions. There are also other features, such as saving a file, loading a file,
 				graphing data, and more. At the instructor's request, the code for this project has been made private.
 				If you would like to see the code, please send me an email at
-				<a href="mailto:ng.d@husky.neu.edu" target="_top" style="font-size: 1em">ng.d@husky.neu.edu</a>.
+				<a href="mailto:ng.d@northeastern.edu" target="_top" style="font-size: 1em">ng.d@northeastern.edu</a>.
 			</p>
 		</div>
 
@@ -72,7 +151,7 @@
 				The game is played through the terminal. To the right is a screenshot of the game in tripeaks mode.
 				The code for this project is currently private, at the instructor's	request. If you would like to
 				see the code, please send me an email at
-				<a href="mailto:ng.d@husky.neu.edu" target="_top" style="font-size: 1em">ng.d@husky.neu.edu</a>.
+				<a href="mailto:ng.d@northeastern.edu" target="_top" style="font-size: 1em">ng.d@northeastern.edu</a>.
 			</p>
 		</div>
 
@@ -87,7 +166,7 @@
 				by 2 or 3 organisms. An organism is born if the cell is empty, and it is surrounded by exactly 3
 				organisms. In my program, the game ends if there are no more organisms, there is a cycle in the
 				generations, or if maximum number of generations is reached. The code to this project can be found
-				<a href="https://github.com/dng24/GameOfLife" target="_blank">here</a>.				
+				<a href="https://github.com/dng24/GameOfLife" target="_blank">here</a>.
 			</p>
 		</div>
 
@@ -182,10 +261,12 @@
 
 		<footer id="footer">
 			<br><br><br>
-			<p>Email: <a href="mailto:ng.d@husky.neu.edu" target="_top">ng.d@husky.neu.edu</a></p>
+			<p>Contact: <a href="mailto:ng.d@northeastern.edu" target="_top">ng.d@northeastern.edu</a></p>
 			<p>Hand-coded by Derek Ng</p>
 			<p>&copy; 2017-2020</p>
-			<p><a href="https://github.com/dng24" target="_blank"><img src="images/github.png" alt="Git Hub"></a></p>
+			<p><a href="https://github.com/dng24" target="_blank"><img src="images/github.png" alt="Git Hub"></a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="https://www.linkedin.com/in/ng-derek/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></p>
 			<br><br>
 		</footer>
 	</body>
