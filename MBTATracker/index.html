@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-57344315-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-57344315-2');
+		</script>
+		
+    <meta charset="UTF-8">
+    <title>MBTA Subway Tracker</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="tracker.js"></script>
+  </head>
+  <body onload="start()">
+    <h1>Real-Time MBTA Subway Tracker</h1>
+    <h3 id="dateTime">Current date & time: </h3>
+    <div id="buttons">
+      <button id="smaller">Smaller</button>
+      <button id="bigger">Bigger</button>
+    </div>
+    <div id="tracker">
+      <canvas id="subways"></canvas>
+      <img id="map" src="fullMap.png" width="1500" height="1800">
+    </div>
+  </body>
+</html>

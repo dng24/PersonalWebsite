@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <meta charset="utf-8">
+      <title>Cyberwar</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="scripts.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <!--The Titles-->
+    <div class="titleSlide">
+      <p id="GO">Welcome to the year 2047.<br><br>Cyberwar has broken out amongst the nations of
+        the world. You are a member of your nation's Offensive Cyber Unit, and your goal is to
+        carry out cyberattacks on an enemy city.
+       </p>
+      <a href="#chapter1"><button class="titleBut">Begin</button></a>
+    </div>
+
+    <div id="chapter1" class="titleSlide">
+      <h2 class="chapterTitles">Chapter 1. Tensions Rising</h2>
+    </div>
+
+    <div class="content">
+      <br><br><br>
+      <p>
+        The modern Internet has revolutionized the way we live. A significant
+        number of services that we use, from social media to stores and
+        restaurants to the power grids and sanitation plants are all connected
+        to the Internet. In essence, the Internet is one big network where all
+        these services can be accessed from anywhere in the world. This ability
+        to be connected is very convenient, but large-scale attacks on these
+        services can be devastating.
+      </p>
+      <br>
+      <p>
+        World governments have realized that because daily life now relies on
+        functioning services that are connected to the Internet, the services of enemy
+        states can be attacked and brought down, especially during wars.
+      </p>
+      <br>
+      <img src="cyberwar.png"> <!--https://static.thenounproject.com/png/2713267-200.png-->
+      <h2>What is cyberwar?</h2>
+      <p>
+        <a href="https://www.britannica.com/topic/cyberwar" target="_blank">Encyclopedia Britannica</a>
+        defines cyberwar as attacks "against government
+        or military networks in order to disrupt, destroy, or deny their use."
+        There are other terms, such as cyberterrorism, cyberespionage, or
+        cybercrime, which may be confused with cyberwar, but because of the legal
+        and political implications of war, many adversarial actions in cyberspace,
+        like a phishing campaign against a corporation or a denial-of-service (DoS)
+        attack against a website, might not be considered as cyberwar.
+      </p>
+      <br>
+      <p>
+        The difficulty in distinction between cyberwar, cyberterrorism,
+        cyberespionage, and cybercrime is not surprising given the low
+        cost of entry into these fields. Anyone who is willing to learn the tools and has some creativity
+        could pull off a widespread cyberattack. An attack aimed at a hospital network,
+        for example, could accidentally spread to school or government networks.
+      </p>
+      <br>
+      <p>
+        In the end, for practical purposes, it does not matter what category a
+        cyberattack is classified as since bringing down the computers of a
+        hospital is still going to affect the hospital's operations whether the
+        attack was done by a military group as part of a cyberwar or by criminals
+        wanting to make money.
+      </p>
+      <br>
+    </div>
+
+    <div id="chapter2" class="titleSlide">
+      <h2 class="chapterTitles">Chapter 2. Destruction</h2>
+    </div>
+
+    <div class="content">
+      <br><br><br>
+      <p>
+        In this exercise, we will take a look at what a major war in the future
+        may look like. Not only will there be conflict in the land, air, and sea
+        (and maybe even space) domains, but there will be attacks in the
+        cyberdomain as well.
+      </p>
+      <br>
+      <p>
+        Attacks may not be limited to government or military networks; any service
+        or place that is connected to the Internet could be attacked as well.
+      </p>
+      <br>
+      <p>
+        As you are a member of your nation's Offensive Cyber Unit, your goal
+        is to conduct reconnaissance on enemy targets and attack them using
+        cyberattacks.
+      </p>
+      <br><br>
+
+      <!--The main content-->
+      <div id="mainContent">
+        <h3 id="arrow">The Targets</h3>
+        <p>
+          Welcome to the City of Bowton, a beautiful metropolis with a
+          population of 700,000 people! Bowton has a diverse range of
+          wonderful restaurants, shops, and museums, but like other cities,
+          Bowton relies on electricity, water, gas, and telecommunications to
+          function. Across the world, Bowton is known for its highly-rated
+          schools and hospitals.
+          <br><br>
+          Below are eight targets that are critical to keep Bowton functional.
+          Click on the icons to prepare a cyberattack for each target, and once
+          an attack has been prepared for all targets, click on each of the
+          targets again to attack.
+        </p>
+        <div class="bigDiv">
+          <div id="bankIcon" class="icons" onclick="showModal('bankReconModal')">
+            <p>Banks and Government</p>
+            <img src="bank.svg" alt="bank" id="bankImg">
+          </div>
+          <div id="corporationIcon" class="icons" onclick="showModal('corporationReconModal')">
+            <p>Corporations</p>
+            <img src="corporation.svg" alt="corporation" id="corporationImg">
+          </div>
+          <div id="pipelineIcon" class="icons" onclick="showModal('pipelineReconModal')">
+            <p>Oil Pipeline</p>
+            <img src="pipeline.svg" alt="pipeline" id="pipelineImg">
+          </div>
+          <div id="waterplantIcon" class="icons" onclick="showModal('waterplantReconModal')">
+            <p>Water Treatment Plant</p>
+            <img src="waterplant.svg" alt="waterplant" id="waterplantImg">
+          </div>
+        </div>
+        <div class="bigDiv">
+          <div id="electricgridIcon" class="icons" onclick="showModal('electricgridReconModal')">
+            <p>Electric Grid</p>
+            <img src="electricgrid.svg" alt="electricgrid" id="electricgridImg">
+          </div>
+          <div id="hospitalIcon" class="icons" onclick="showModal('hospitalReconModal')">
+            <p>Hospitals and Schools</p>
+            <img src="hospital.svg" alt="hospital" id="hospitalImg">
+          </div>
+          <div id="ispIcon" class="icons" onclick="showModal('ispReconModal')">
+            <p>Telecommunications</p>
+            <img src="isp.svg" alt="isp" id="ispImg">
+          </div>
+          <div id="nuclearplantIcon" class="icons" onclick="showModal('nuclearplantReconModal')">
+            <p>Nuclear Power Plant</p>
+            <img src="nuclearplant.svg" alt="nuclearplant" id="nuclearplantImg">
+          </div>
+        </div>
+      </div>
+
+      <br>
+    </div>
+
+    <div id="bankReconModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('bankReconModal');">&times;</span>
+        <h3>Prepare to attack bank and government websites</h3>
+        <p>
+          The citizens of Bowton rely on government and bank websites to
+          access government services and to complete financial transactions.
+          During this war, citizens have also received important and accurate
+          information about the war from government websites.
+        </p>
+        <p>
+          <b>Your Goal:</b> Deny citizens access to Bowton government and bank websites
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Distributed denial of service (DDoS) - an attack
+          where multiple computers bombard a server with so many requests for its
+          website such that the server cannot process all requests. As a result,
+          legitimate users may not be able to access the affected website.
+        </p>
+        <p>
+          <b>Preparation of attack:</b> Create a botnet, which is a network of computers
+          that can be controlled remotely, by tricking people into downloading
+          a script that bombards the targeted websites with requests.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performRecon('bankReconModal');">Build botnet</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="corporationReconModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('corporationReconModal');">&times;</span>
+        <h3>Prepare to attack Bowton businesses</h3>
+        <p>
+          Bowton is the location of the headquarters of some very large businesses
+          that citizens use daily. Wouldn't it be nice to discover some of their
+          secrets and steal sensitive customer data?
+        </p>
+        <p>
+          <b>Your Goal:</b> Install backdoors into the systems of these businesses
+          so that you can snoop around their servers.
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Remote code execution (attack that allows bad actors to run their
+          code on your servers) using the Log4j zero-day vulnerability (a serious and widespread vulnerability
+          that allows for RCE)
+        </p>
+        <p>
+          <b>Preparation of attack:</b> The Log4j vulnerability works by typing a specific input
+          into a vulnerable application, which sends the input to a server. Upon receiving the
+          input, the server downloads and executes code from a malicious server specified in the
+          input.
+          <br><br>
+          To prepare, you write a script that enables a backdoor in the servers of these companies.
+          This script will be downloaded and executed when the Log4j attack is launched.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performRecon('corporationReconModal');">Write backdoor script</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="pipelineReconModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('pipelineReconModal');">&times;</span>
+        <h3>Prepare to attack oil pipeline</h3>
+        <p>
+          Bowton relies on pipelines to bring in oil and gas for fuel to heat buildings and for
+          vehicles like cars, buses, and planes. Because it is winter in Bowton now, disrupting the
+          flow of oil and gas will have a significant impact on the city.
+        </p>
+        <p>
+          <b>Your Goal:</b> Get into the pipeline's systems and disrupt the flow of oil and gas.
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Leaked password
+        </p>
+        <p>
+          <b>Preparation of attack:</b> Sometimes it is not necessary to have to hack through a
+          backdoor; going through the front door works as well - that is, if you have the key. You
+          keep up with cybersecurity news and are aware that this oil pipeline company has recently
+          suffered a data breach. Maybe the passwords to its systems are lying somewhere in the
+          dark web... To prepare, you search the dark web in an attempt to find these passwords.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performRecon('pipelineReconModal');">Search dark web for passwords</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="waterplantReconModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('waterplantReconModal');">&times;</span>
+        <h3>Prepare to attack water treatment plant</h3>
+        <p>
+          Treating wastewater is an important part of a functioning city. Without it, health and
+          environmental concerns could arise from water pollution. As part of the treatment process,
+          sodium hydroxide is added to the water. In small amounts, sodium hydroxide is fine, but
+          large amounts can be dangerous.
+        </p>
+        <p>
+          <b>Your Goal:</b> Get into the human machine interface (HMI) that controls the amount of
+          sodium hydroxide in the water and raise its levels to a dangerous amount.
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Guess password to the HMI
+        </p>
+        <p>
+          <b>Preparation of attack:</b> In your research, you have scanned the network of the
+          water treatment plant and have found a login page to their systems that have been left
+          exposed to the public Internet so that employees can remotely check on the plant. To
+          prepare, you research possible credentials that they might use.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performRecon('waterplantReconModal');">Research possible credentials</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="electricgridReconModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('electricgridReconModal');">&times;</span>
+        <h3>Prepare to attack electric grid</h3>
+        <p>
+          The electric grid provides the most essential aspect of a functioning society:
+          electricity. Without it, very few things can run. Cutting power to the city should bring
+          it to a standstill.
+        </p>
+        <p>
+          <b>Your Goal:</b> Break into the systems of the electric grid, switch off the substations,
+          and delete as many things as possible to slow their recovery.
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Spear phishing emails
+        </p>
+        <p>
+          <b>Preparation of attack:</b> In spear phishing, targeted emails are sent to certain
+          people in order to try to trick them into providing sensitive information or opening a
+          malicious file. To prepare, you draft an email, which you send to electric company
+          employees, pretending to be their CEO. In the email, you write that
+          an urgent matter needs to be addressed, followed by a link to get more details on the
+          matter. The link leads to a fake electric company login page where employees are tricked
+          into entering their real credentials, which allows them to download a PDF that contains
+          the details of the matter. Little do the employees know that the PDF, when opened,
+          installs backdoors to the electric company's systems and that you have their passwords.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performRecon('electricgridReconModal');">Create PDF, fake website, and email</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="hospitalReconModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('hospitalReconModal');">&times;</span>
+        <h3>Prepare to attack hospitals and schools</h3>
+        <p>
+          Hospitals and public schools are highly vulnerable targets to cyberattacks because of
+          their importance but relatively lax standards in cybersecurity. Hospitals and schools are
+          digitalizing patient and student records, which means a compromise of these could severely
+          damage the operations of these institutions.
+        </p>
+        <p>
+          <b>Your Goal:</b> Prevent hospitals and schools from accessing their records by encrypting
+          their files and holding the decryption key for ransom.
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Spear phishing emails and ransomware
+        </p>
+        <p>
+          <b>Preparation of attack:</b> A spear phishing email is an email targeted at key
+          individuals which tricks them into clicking a link that downloads malware. To prepare for
+          this attack, write some code that encrypts all the files on a system. To make your attack
+          more nefarious, write some additional code that spreads your ransomware to other
+          computers over the network so that every computer at your targets become infected.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performRecon('hospitalReconModal');">Write ransomware code</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="ispReconModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('ispReconModal');">&times;</span>
+        <h3>Prepare to attack ISP</h3>
+        <p>
+          The Internet is an essential part of life now; our digital lives rival that of our
+          physical ones. Behind the scenes, Internet service providers (ISP) keep the backbones of
+          the Internet running. Without them, the Internet simply would not exist. If you could
+          comromise the core routers of the Internet, you could take out Internet service for a
+          large number of commercial and residential users.
+        </p>
+        <p>
+          <b>Your Goal:</b> Gain access to the core routers of the ISP in Bowton and shut them down.
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Zero-day vulnerability (a previously unknown vulnerability) that
+          provides a backdoor into a machine
+        </p>
+        <p>
+          <b>Preparation of attack:</b> Third-party software can contain bugs that allow
+          unauthorized users to gain access into systems. Because it is easier to use existing
+          software than write new versions, companies will use existing third-party software as a part of their operations. If
+          a vulnerability exists in the third-party software, then all the companies that use that
+          software are vulnerable as well.
+          <br><br>
+          To prepare, do a scan of the ISP's network to determine possible software that the ISP
+          uses. After finding some software that they use, do an online search for vulnerabilities
+          in the software and read up on how to exploit the vulnerabilities.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performRecon('ispReconModal');">Search for vulnerabilities</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="nuclearplantReconModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('nuclearplantReconModal');">&times;</span>
+        <h3>Prepare to attack nuclear plant</h3>
+        <p>
+          A significant amount of Bowton's electricity is generated from the nearby nuclear plant.
+          The nuclear plant utilizes centrifuges as part of the process to generate electricity. If
+          you can gain access to the controls for the centrifuges, you could spin the centrifuges so
+          fast that they break themselves apart.
+        </p>
+        <p>
+          <b>Your Goal:</b> Gain access to the centrifuges and spin them as fast as possible.
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Spear-phishing and Worm (a piece of malware that spreads by
+          replicating itself)
+        </p>
+        <p>
+          <b>Preparation of attack:</b> Like many networks, a lot of machines are connected to the
+          nuclear plant's network. More important machines are hidden behind more layers of
+          security. The centrifuges are an integral part of the plant, so its computers are
+          air gapped, or not connected to the Internet. The only way to transfer information
+          between the centrifuge computers and the outside world is through a USB stick.
+          <br><br>
+          To prepare for attack, write the worm that will spread through the plant's network, onto
+          the USB devices, and into the centrifuge. To get your worm inside the plant, you will
+          send a phishing email as your attack.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performRecon('nuclearplantReconModal');">Write a worm</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="bankAttackModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('bankAttackModal');">&times;</span>
+        <h3>Attack bank and government websites</h3>
+        <p>
+          Now that you have your botnet of computers, it is time to get all of
+          them to spam Bowton's government and bank websites all at once with
+          traffic.
+        </p>
+        <p>
+          <b>Your Goal:</b> Deny citizens access to Bowton government and bank websites
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Distributed denial of service (DDoS) - an attack
+          where multiple computers bombard a server with so many requests for its
+          website such that the server cannot process all requests. As a result,
+          legitimate users may not be able to access the affected website.
+        </p>
+        <p>
+          <b>Attack:</b> Tell all the computers in your botnet to DDoS the
+          selected websites with traffic.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performAttack('bankAttackModal');">DDoS websites</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="corporationAttackModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('corporationAttackModal');">&times;</span>
+        <h3>Attack Bowton businesses</h3>
+        <p>
+          You have written code to enable a backdoor in the servers of these businesses. It is
+          time to exploit the Log4j vulnerability on the websites and applications of these
+          businesses, so that you can execute your code on their servers.
+        </p>
+        <p>
+          <b>Your Goal:</b> Install a backdoor into the systems of these businesses
+          so that you can snoop around their servers.
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Remote code execution (allowing attackers to run their code on
+          your server) using the Log4j zero-day vulnerability (a serious and widespread vulnerability
+          that allows for RCE)
+        </p>
+        <p>
+          <b>Attack:</b> The Log4j vulnerability is widespread, but not every system is prone to
+          attack, either because the system does not use the Log4j software, or it uses a patched
+          version of the Log4j software. To attack, you try injecting your code into every text box
+          on the websites and applications of your target businesses.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performAttack('corporationAttackModal');">Inject your code</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="pipelineAttackModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('pipelineAttackModal');">&times;</span>
+        <h3>Attack oil pipeline</h3>
+        <p>
+          You have found leaked passwords on the dark web from the pipeline company's data breach.
+          They probably have changed their passwords since the breach has occurred, but it doesn't
+          hurt to try to login.
+        </p>
+        <p>
+          <b>Your Goal:</b> Get into the pipeline's systems and disrupt the flow of oil and gas
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Leaked password
+        </p>
+        <p>
+          <b>Attack:</b> If you can manage to login to one of the oil pipeline company's systems,
+          you may be able to find a way to hop to the interface that controls the flow of oil and
+          stop it. A more nefarious attack would be to stop the flow of oil but have the dashboards
+          still indicate that oil is still flowing. Other chaos you could inflict include encrypting
+          or deleting important files.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performAttack('pipelineAttackModal');">Login with leaked passwords</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="waterplantAttackModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('waterplantAttackModal');">&times;</span>
+        <h3>Attack water treatment plant</h3>
+        <p>
+          You have created a list of possible credentials for a system at the water treatment plant.
+          It is time to test out these credentials.
+        </p>
+        <p>
+          <b>Your Goal:</b> Get into the human machine interface (HMI) that controls the amount of
+          sodium hydroxide in the water and raise its levels to a dangerous amount.
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Guess password to the HMI
+        </p>
+        <p>
+          <b>Attack:</b> Enter the potential credentials into the login page. If none of them work,
+          you might use some tools, like Burp Suite, to brute force the credentials.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performAttack('waterplantAttackModal');">Guess credentials</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="electricgridAttackModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('electricgridAttackModal');">&times;</span>
+        <h3>Attack electric grid</h3>
+        <p>
+          You have sent your spear phishing email to all employees of the electric company to
+          increase the chances of someone falling for the trick. Several of the employees have
+          entered their real credentials into your fake login page and have infected their machines
+          with the malware from your PDF, which gives you an opening to access the company's internal
+          systems.
+        </p>
+        <p>
+          <b>Your Goal:</b> Break into the systems of the electric grid, switch off the substations,
+          and delete as many things as possible to slow their recovery.
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Spear phishing emails
+        </p>
+        <p>
+          <b>Attack:</b> A few employees who have access to the substation interface have fallen
+          victim to your email, which allows you to shut down power. The credentials that you have
+          received from the fake login page also comes in handy in deleting files since certain
+          important files can be deleted only by those who have access to them.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performAttack('electricgridAttackModal');">Shut off power and delete files</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="hospitalAttackModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('hospitalAttackModal');">&times;</span>
+        <h3>Attack hospitals and schools</h3>
+        <p>
+          You have your ransomware that can encrypt computers and spread itself over networks. It is
+          now time to send your phishing email to the employees of Bowton schools and hospitals.
+        </p>
+        <p>
+          <b>Your Goal:</b> Prevent hospitals and schools from accessing their records by encrypting
+          their files and holding the decryption key for ransom.
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Spear phishing emails and ransomware
+        </p>
+        <p>
+          <b>Attack:</b> Send a phishing email which tricks Bowton hospital and school employees
+          into clicking a link that downloads and runs your ransomware code.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performAttack('hospitalAttackModal');">Send phishing email</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="ispAttackModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('ispAttackModal');">&times;</span>
+        <h3>Attack ISP</h3>
+        <p>
+          You have found some software that your ISP uses that may be vulnerable. It is time to
+          exploit the vulnerability to get a backdoor into their systems.
+        </p>
+        <p>
+          <b>Your Goal:</b> Gain access to the core routers of the ISP in Bowton and shut them down.
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Zero-day vulnerability (a previously unknown vulnerability) that
+          provides a backdoor into a machine
+        </p>
+        <p>
+          <b>Attack:</b> Run your exploit to get a backdoor in the ISP's systems. You hope that the
+          ISP did not upgrade their software to the latest version since your exploit works with
+          only certain older versions. If you are successful, you might be able to jump to the core
+          routers and take them offline.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performAttack('ispAttackModal');">Run exploit</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="nuclearplantAttackModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('nuclearplantAttackModal');">&times;</span>
+        <h3>Attack nuclear plant</h3>
+        <p>
+          You have written a worm that can jump the network air gap to the centrifuge. You still
+          have to get your worm inside the plant's network though.
+        </p>
+        <p>
+          <b>Your Goal:</b> Gain access to the centrifuges and spin them as fast as possible.
+        </p>
+        <p>
+          <b>Vector of Attack:</b> Spear-phishing and Worm (a piece of malware that spreads by
+          replicating itself)
+        </p>
+        <p>
+          <b>Attack:</b> Send phishing emails to the plant's employees, which tricks them into
+          downloading your worm onto their computers. The worm should spread throughout the network
+          and eventually hop onto a USB into the centrifuge computers.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="performAttack('nuclearplantAttackModal');">Send phishing email</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="bankSuccessModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('bankSuccessModal');">&times;</span>
+        <h3>Success!</h3>
+        <p>
+          You have successfully spammed Bowton government and banking websites with so much traffic
+          that legitimate users can no longer access them. It is difficult for Bowton to stop the
+          attacks because they cannot tell the difference between legitimate and illegimate traffic.
+          The citizens of Bowton now must visit government offices and banks in person to receive
+          any service.
+        </p>
+        <br><br>
+        <p>
+          This attack was based off of the real-life cyberwar between Estonia and Russia, where
+          <a href="https://doi.org/10.1109/MSP.2007.98" target="_blank">Russia DDoSed the government and important businesses of Estonia</a>
+          in 2007.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="hideModal('bankSuccessModal');">Close</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="corporationSuccessModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('corporationSuccessModal');">&times;</span>
+        <h3>Success!</h3>
+        <p>
+          You try executing your Log4j attack on several Bowton businesses, and as expected, not
+          every company was susceptible, but a handful of companies with lax cybersecurity practices
+          were exploited. You were able to snoop around their servers and databases. In one case,
+          you were able to find a long list of customer names and email addresses - you could send
+          them some phishing emails to get their login credentials to websites they use.
+        </p>
+        <br><br>
+        <p>
+          This attack was based off of the
+          <a href="https://www.wsj.com/articles/what-is-the-log4j-vulnerability-11639446180" target="_blank">Log4j vulnerability</a>
+          from 2021. This widespread vulnerability affected companies like Apple, Amazon, and
+          Microsoft. Fortunately, the large amounts of press over the topic persuaded companies to
+          patch their versions of Log4j before they could be exploited.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="hideModal('corporationSuccessModal');">Close</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="pipelineSuccessModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('pipelineSuccessModal');">&times;</span>
+        <h3>Success!</h3>
+        <p>
+          Most of the credentials that you try to access the pipeline's systems with do not work; it
+          looks like their IT department told everyone to change their passwords after their data
+          breach. You do find that there is one password that works though, which is for an account
+          that is no longer used that no one bothered to deactivate. It seems you do not have
+          permissions to shut down the pipeline, so you move on to the second step and delete all
+          the files that you have permission to delete.
+        </p>
+        <br><br>
+        <p>
+          After a few days, an employee notices that certain important files are missing and that
+          you, an intruder, logged in from their unused account. They do not know what else you
+          could have had access to, so they decide to shut down the pipeline themselves as a
+          precaution until they know for sure what happened. In the end, even though you did not
+          shut down the pipeline, in a way you actually did.
+        </p>
+        <br><br>
+        <p>
+          Because of the low supply of fuel, gas prices skyrocket, and Bowton residents begin panic
+          buying at the pump.
+        <br><br>
+        <p>
+          This attack is based off of the
+          <a href="https://www.cybertalk.org/2021/06/09/colonial-pipeline-co-attack-what-really-happened/" target="_blank">Colonial Pipeline attack</a>
+          in 2021 where hackers gained entry into Colonial's systems through an unused account using
+          a stolen password. The hackers released ransomware into the system (instead of deleting
+          the files), and upon discovery, Colonial staff shut down the pipeline for five days,
+          causing fuel shortages in the Southeast United States.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="hideModal('pipelineSuccessModal');">Close</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="waterplantSuccessModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('waterplantSuccessModal');">&times;</span>
+        <h3>Success!</h3>
+        <p>
+          You were able to guess their extremely weak password to the HMI that controls the amount
+          of sodium hydroxide in the water supply. You increase the amount of sodium hydroxide to
+          the highest level possible, and your change goes unnoticed for several hours. You have
+          just poisoned the public water supply. Bowton officials put out a notice that tap water
+          should not be used.
+        </p>
+        <br><br>
+        <p>
+          This attack is based off of a similar
+          <a href="https://www.mass.gov/service-details/cybersecurity-advisory-for-public-water-suppliers" target="_blank">water treatment plant incident</a>
+          in 2021 where weak passwords allowed a hacker to break in and increase the levels of
+          sodium hydroxide to a dangerous amount. Fortunately, a worker immediately noticed and
+          reverted the changes.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="hideModal('waterplantSuccessModal');">Close</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="electricgridSuccessModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('electricgridSuccessModal');">&times;</span>
+        <h3>Success!</h3>
+        <p>
+          You were able to shut off power to about 80,000 residents for several hours. The power
+          company could restore power quickly because they were still able to manually turn the
+          switch back on physically at the substation. However, their recovery from all the deleted
+          files will take much longer.
+        </p>
+        <br><br>
+        <p>
+          This attack is based off of a
+          <a href="https://dyk37jtr1gebn.cloudfront.net/media/files/qZnBepSEQduQ64vvqMvC_Cyber-%20FINAL%20copy.pdf" target="_blank">2015 Ukrainian power grid hack</a>,
+          where Russia not only turned off power, but they also infected the power company's systems
+          with malware and DDoSed their call center.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="hideModal('electricgridSuccessModal');">Close</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="hospitalSuccessModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('hospitalSuccessModal');">&times;</span>
+        <h3>Success!</h3>
+        <p>
+          Unsuspecting employees at Bowton hospitals and schools fell for your phishing email and
+          have installed your ransomware on their machines. The ransomware spread to other
+          machines on the institutions' networks as well. Teachers cannot access their online
+          gradebooks. Administrators cannot access student records. Doctors and nurses cannot see
+          patient records, nor can they see (at least in the online interface) which patients are
+          currently in the hospital.
+        </p>
+        <br><br>
+        <p>
+          This attack is based on the
+          <a href="https://www.newscientist.com/article/2130983-ransomware-attack-hits-200000-computers-across-the-globe/" target="_blank">2017 WannaCry ransomware</a>,
+          which infected 200,000 computers around the world. Victims included businesses,
+          governments, hospitals, schools, and individuals.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="hideModal('hospitalSuccessModal');">Close</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="ispSuccessModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('ispSuccessModal');">&times;</span>
+        <h3>Success!</h3>
+        <p>
+          It looks like the ISP is still using a vulnerable version of a piece of software, so you
+          were able to gain access to the ISP's network. With enough luck, you were able to jump
+          to the systems hosting the core routers, take them offline, and delete anything you could.
+          A significant number of Bowton residents use this ISP, and they are all knocked off the
+          Internet. You deleted important configuration files, so it takes the ISP a few days to
+          restore Internet.
+        </p>
+        <br><br>
+        <p>
+          This attack is based off of a
+          <a href="https://www.theguardian.com/technology/2021/oct/14/leave-no-trace-how-a-teenage-hacker-lost-himself-online" target="_blank">2011 hack of KPN</a>,
+          an ISP in the Netherlands. A hacker was able to enter KPN's systems through a
+          vulnerability in unpatched software, and he was able to access the core routers, but
+          fortunately for KPN, he decided to only look around and not touch anything.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="hideModal('ispSuccessModal');">Close</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="nuclearplantSuccessModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('nuclearplantSuccessModal');">&times;</span>
+        <h3>Success!</h3>
+        <p>
+          You sent your phishing email, and it seems like somebody at the plant fell for it because
+          days later, you see the headline "Bowton nuclear plant explodes" in your news feed.
+        </p>
+        <br><br>
+        <p>
+          This attack is based off of the
+          <a href="https://www.wired.com/2014/11/countdown-to-zero-day-stuxnet/" target="_blank">2009 Stuxnet attack</a>
+          that limited the amount of enriched uranium Iran could produce by causing computers to
+          crash and reboot and infecting air gapped centrifuges via USB sticks.
+        </p>
+        <br><br><br>
+        <button class="titleBut modalBtn" onclick="hideModal('nuclearplantSuccessModal');">Close</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="loadingModal" class="modal">
+      <div class="modalContent">
+        <h3 id="loadingModalP">Preparing attack...</h3>
+        <p id="spinner"></p>
+        <br><br><br>
+        <button id="loadingModalButton" class="titleBut modalBtn" onclick="closeLoadingModal();">Done!</button>
+        <br><br><br>
+      </div>
+    </div>
+
+    <div id="rware">
+      <div class="row">
+        <div id="col1">
+          <img src="lock.svg" class="rwareBorder" width="50%">
+          <br><br>
+          <div class="rwareBorder">
+            <p style="color:yellow">Payment will be raised on</p>
+            <p id="priceRaiseDate"></p>
+            <p>Time Left</p>
+            <p id="priceRaiseTimeLeft"></p>
+          </div>
+          <br>
+          <div class="rwareBorder">
+            <p style="color:yellow">Your files will be lost on</p>
+            <p id="expireDate"></p>
+            <p>Time Left</p>
+            <p id="timeLeft"></p>
+          </div>
+        </div>
+        <div id="col2">
+          <h2>Oops, your files have been encrypted!</h2>
+          <div id="col2Info">
+            <p><b>What Happened to My Computer?</b></p>
+            <p>Your important files are encrypted.</p>
+            <p>
+              Many of your documents, photos, videos, databases and other files are no longer
+              accessible because they have been encrypted. Maybe you are busy looking for a way to
+              recover your files, but do not waste your time. Nobody can recover your files without
+              our decryption service.
+            </p>
+            <br>
+            <p><b>Can I Recover My Files?</b></p>
+            <p>
+              Sure. We guarantee that you can recover all your files safely and easily. But you have
+              not so enough time. You can decrypt some of your files for free. Try now by clicking
+              Decrypt. But if you want to decrypt all your files, you need to pay. You only have 3
+              days to submit the payment. After that the price will be doubled. Also, if you don’t pay
+              in 7 days, you won’t be able to recover your files forever. We will have free events for
+              users who are so poor that they couldn’t pay in 6 months.
+            </p>
+          </div>
+          <div id="jk">
+            <p>
+              jk :) this isn't actually ransomware. Your computer is fine. This is just a friendly
+              reminder to not click sketchy links on the web or in your email.
+            </p>
+            <p id="exitRware" onclick="exitFullScreen();"><u>Return to the cyberwar exercise.</u></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="chapter3" class="titleSlide">
+      <h2 class="chapterTitles">Chapter 3. Fallout</h2>
+    </div>
+
+    <div class="content">
+      <br><br><br>
+      <h2>Damage to Bowton</h2>
+      <p>
+        Taking down all eight targets, you have inflicted a huge amount of damage on Bowton.
+        With online services down, citizens find it difficult to obtain goods and services from
+        businesses and institutions.
+      </p>
+      <br>
+      <p>
+        From the point of view of businesses and institutions, they
+        are also finding it difficult to service customers, and even worse, because their networks
+        has been breached, they must deal with potential leaks of sensitive company and customer
+        data, like trade secrets and social security numbers.
+      </p>
+      <br>
+      <p>
+        The critical infrastructure of Bowton did not take their hits well either. Because you
+        released high levels of sodium hydroxide into their water, citizens have been avoiding
+        use of tap water and are buying more expensive bottled water for several days.
+      </p>
+      <br>
+      <p>
+        Oil and gas have become more expensive as well, given the shortage that has surfaced from the
+        shutdown of the pipeline. This attack has stung the city since it is below freezing in Bowton
+        right now.
+      </p>
+      <br>
+      <p>
+        Taking down the electric grid virtually brought the city to a standstill since
+        like any modern city, the people are highly dependent on electricity. This attack did not
+        have as worse of an impact though because power was shut down for only a few hours, and
+        critical infrastructure and large buildings have their own backup generators.
+      </p>
+      <br>
+      <p>
+        Finally,
+        amongst all the chaos, a portion of Bowton citizens could not conveniently get information
+        about what attacks were happening or what they should do because they did not have Internet.
+      </p>
+      <br>
+      <img src="destroyedSkyline.jpg"> <!--https://media.istockphoto.com/vectors/skyline-ruined-city-vector-id481029916?b=1&k=20&m=481029916&s=612x612&w=0&h=7zW6aMd3PODCNhCgTf8T4IEsVEoIW_oBL33tf1r-sFM=-->
+      <h2>Reality of Cyberwar</h2>
+      <p>
+        The goal of this exercise was to illustrate what a full-scale cyberwar may look like. Of
+        course, it is difficult to predict what an actual one would look like. An adversary may
+        attempt all of the attacks listed above, but some luck is required for success since the
+        attacks depend on the presence of the right holes in victim networks. In reality, all the
+        attacks require much more preparation than written above.
+      </p>
+      <br>
+      <p>
+        Cyberwars could be fought concurrently with a traditional war. In this case, a traditional
+        military would invade a country as cyberwarriors attack that country's cyber infrastructure.
+        The conventional army could also participate in the cyberwar as well by destroying the
+        infrastructure needed to keep cyber systems running, such as routers or computers.
+      </p>
+      <br>
+      <p>
+        With conventional militaries, it is possible to judge their strengths and weaknesses based
+        on the previous wars they have participated in and on weapons that are showcased in military
+        parades. A nation's cyber capabilities are harder to judge because of the secrecy that is
+        needed to keep such cyberweapons effective. Best practices can be followed, which will
+        increase the difficulty of a successful attack, but that cannot guarantee complete security.
+      </p>
+      <br><br><br>
+    </div>
+  </body>
+</html>
